@@ -15,7 +15,7 @@ extension Notification.Name {
  Properties are prefixed and before they are stored in UserDefaults.standard.
  */
 @objc(MBNavigationSettings)
-public class NavigationSettings: NSObject {
+open class NavigationSettings: NSObject {
     
     /**
      The volume that the voice controller will use.
@@ -79,7 +79,7 @@ public class NavigationSettings: NSObject {
         }
     }
     
-    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
         var found = false
         
         for property in properties {
