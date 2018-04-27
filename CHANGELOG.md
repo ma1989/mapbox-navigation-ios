@@ -3,6 +3,7 @@
 ## master
 
 * Upgraded to the [Mapbox Maps SDK for iOS v4.0.0](https://github.com/mapbox/mapbox-gl-native/releases/tag/ios-v4.0.0). If you have customized the route map’s appearance, you may need to migrate your code to use expressions instead of style functions. ([#1076](https://github.com/mapbox/mapbox-navigation-ios/pull/1076))
+* Added a Korean localization. ([#1346](https://github.com/mapbox/mapbox-navigation-ios/pull/1346))
 * `NavigationViewControllerDelegate.navigationViewControllerDidCancelNavigation(_:)` has been superseded by `NavigationViewControllerDelegate.navigationViewControllerDidEndNavigation(_:cancelled:)`. [#1318](https://github.com/mapbox/mapbox-navigation-ios/pull/1318)
 * `RouteController`’s `routeProgress` is now exposed to Objective-C. [#1323](https://github.com/mapbox/mapbox-navigation-ios/pull/1323)
 * Exit indications are now drawn accurately with a correct exit bearing. [#1288](https://github.com/mapbox/mapbox-navigation-ios/pull/1288)
